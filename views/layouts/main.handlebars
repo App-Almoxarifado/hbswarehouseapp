@@ -21,20 +21,19 @@
 <body>
 
     {{>_navbar}}
-    {{#if error}}
-    <div class="alert alert-danger">{{error}}</div>
-    {{else}}
-    {{/if}}
-    {{>_msg}}
-
-    {{>_sidebar}}
 
 
-    {{{body}}}
-    </div>
+            {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+            {{else}}
+            {{/if}}
+            {{>_msg}}
+            {{>_sidebar}}
+            {{{body}}}
+        </div>
 
     {{>_footer}}
-
+</body>
     <!-- JS JQUERY JS-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
@@ -55,6 +54,6 @@
     <script src="/js/script.js"></script>
     <!-- JS  -->
     <script src="/js/javascript.js"></script>
-</body>
+
 
 </html>
