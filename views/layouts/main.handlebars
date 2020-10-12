@@ -1,50 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
 
 <head>
-  <title>HBS Warehouseapp</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- CSS BOOTSTRAP -->
-  <link rel="stylesheet" href="/css/bootstrap.css">
-  <!-- CSS FONT-AWESOME -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css">
-
-  <!-- CSS STYLE -->
-  <link rel="stylesheet" href="/css/style4.css">
-  <link rel="stylesheet" href="/css/style.min.css">
-
+    <title>Warehousemapp</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- CSS BOOTSTRAP -->
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <!-- CSS FONT-AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" />
+    <!-- CSS STYLE -->
+    <link rel="stylesheet" href="/css/style.min.css">
+    <!-- GOOGLE CHART -->
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <!-- JS CHART -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 </head>
 
 <body>
 
-  {{>_navbar}}
-  {{#if error}}
-  <div class="alert alert-danger">{{error}}</div>
-  {{else}}
-  {{/if}}
-  {{>_msg}}
+    {{>_navbar}}
+    <div id="bg">
+        <div class="container">
 
-  {{>_sidebar}}
+            {{#if error}}
+            <div class="alert alert-danger">{{error}}</div>
+            {{else}}
+            {{/if}}
+            {{>_msg}}
+            {{{body}}}
+        </div>
+    </div>
+    {{>_footer}}
 
-
-  {{{body}}}
-  </div>
-
-  {{>_footer}}
-
+    <!-- JS JQUERY JS-->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js"></script>
+    <!-- JS JQUERY MASK JS-->
+    <script src="/js/jquery.mask.min.js"></script>
+    <!-- JS POPPER BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <!-- JS FONT-AWESOME -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
+    <!-- HANDLEBARS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <!-- JS BOOTSTRAP -->
+    <script src="/js/bootstrap.js"></script>
+    <!-- JS QR CODE  -->
+    <script src="/js/qrcode.js"></script>
+    <!-- JS  -->
+    <script src="/js/javascript.js"></script>
 </body>
-<!-- JS JQUERY JS POPPER-->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-  integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-  integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<!-- JS FONT-AWESOME -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/js/all.min.js"></script>
-<!-- JS BOOTSTRAP -->
-<script src="/js/bootstrap.js"></script>
-<!-- JS  -->
-<script src="/js/script.js"></script>
 
 </html>

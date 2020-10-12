@@ -1,9 +1,12 @@
-const  express = require('express');
+const express = require("express");
 const router = express.Router();
 const controller = require("../controllers/planning-controller");
 
-
-//INDEX
-router.get("/",controller.get);
+//PRODUTOS - ROTA CARRINHO DE COMPRAS
+router.get("/", controller.request);
+router.get("/cart/:id?", controller.getCart);
+router.post("/addItem", controller.postRequest);
+router.post("/updateItem", controller.updateRequest);
+router.get("/search/group/:id", controller.getSearch);
 
 module.exports = router;
