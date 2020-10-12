@@ -1,4 +1,6 @@
 
+
+
 $theme-colors: ("primary": #0075be,
 );
 $border-radius: 0.3rem !default;
@@ -40,7 +42,7 @@ a:focus {
     max-width: 250px;
     background: #131313;
     color: #fff;
-    transition: all 0.9s;
+    transition: all 0.3s;
 }
 
 #sidebar.active {
@@ -209,3 +211,408 @@ a.article:hover {
     }
 }
 
+//app
+.certificate {
+    display: none;
+}
+
+input[type="file"] {
+    color: transparent;
+    display: none;
+}
+
+thead {
+    background-color: #0075be;
+    color: #fff;
+}
+
+
+
+table {
+    font-size: x-small;
+    text-align: center;
+    text-align-last: center;
+}
+
+.inputTake{ width:100%; height:100%; font-size: x-small;background: transparent;border: none;color: #ffffff;}
+
+.hiddenTable {
+    background: transparent;
+    pointer-events: none;
+    touch-action: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    //background: transparent url('example.png') no-repeat right center;
+    //padding: 2px 30px 2px 2px;
+    border: none;
+    //text-align: center; /* para firefox */
+    //text-align-last: center; /* para chrome */
+    font-size: x-small;
+    //color: white;
+    //width:200px
+    //font-weight:bold;
+    background-color: transparent;
+    }
+    input[readonly].hiddenTable{
+        background-color:transparent;
+    }
+
+
+
+.btntb {
+    font-size: small;
+    width: 35px;
+}
+
+.groups {
+    padding-top: 150px;
+    padding-bottom: 300px;
+    /* Place content 60px from the top */
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    //transform: translate(-50%, -50%);
+}
+
+.takegroups {
+    padding-top: 150px;
+    padding-bottom: 400px;
+    /* Place content 60px from the top */
+    width: 100%;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    //transform: translate(-50%, -50%);
+}
+
+.addgroups {
+    padding-top: 100px;
+    
+    /* Place content 60px from the top */
+    width: 500px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    //color: lighten($color: #ffffff, $amount: 0);
+    //transform: translate(-50%, -50%);
+}
+
+.addsubgroups {
+    padding-top: 80px;
+    padding-bottom: 200px;
+    /* Place content 60px from the top */
+    width: 500px;
+    height: 100%;
+    top: 50%;
+    left: 50%;
+    //transform: translate(-50%, -50%);
+}
+
+.userlogin {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    //padding-top: 250px;
+    //padding-bottom: 335px;  
+    width: 400px;
+    //height: 100%;
+    color: lighten($color: #ffffff, $amount: 0);
+    //transform: translate(-50%, -50%);
+}
+
+.userlogin2 {
+    position: fixed;
+    //padding-top: 80px;
+    //padding-bottom: 335px;
+    text-align: left;
+    width: 400px;
+    //height: 100%;
+    top: 50%;
+    left: 50%;
+    color: lighten($color: #ffffff, $amount: 0);
+    transform: translate(-50%, -50%);
+}
+
+.user {
+    position: fixed;
+    //padding-top: 75px;
+    //padding-bottom: 100px;
+    width: 400px;
+    //height: 100%;
+    top: 50%;
+    left: 50%;
+    color: lighten($color: #ffffff, $amount: 0);
+    transform: translate(-50%, -50%);
+}
+
+.type {
+    position: fixed;
+    //padding-top: 75px;
+    //padding-bottom: 100px;
+    width: 400px;
+    //height: 100%;
+    top: 50%;
+    left: 50%;
+    color: lighten($color: #ffffff, $amount: 0);
+    transform: translate(-50%, -50%);
+}
+
+.bgType {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-image: url("https://warehousemapp.s3.amazonaws.com/ferramentas01.jpg");
+    background-color: #000000;
+    background-position: 30% 45%;
+    background-size: cover;
+
+}
+
+
+//SELECT E INPUT SEM BORDAS
+.car {
+    background: transparent;
+    pointer-events: none;
+    touch-action: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    //background: transparent url('example.png') no-repeat right center;
+    //padding: 2px 30px 2px 2px;
+    border: none;
+    text-align: center; /* para firefox */
+    text-align-last: center; /* para chrome */
+    font-size: small;
+    //width:200px
+    font-weight:bold;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.intro {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 100px 0;
+    color: white;
+    background-image: url("https://warehousemapp.s3.amazonaws.com/capadev.jpg");
+    background-position: 30% 45%;
+    background-size: cover;
+}
+
+.bgDark {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    color: white;
+    background-image: url("https://warehousemapp.s3.amazonaws.com/bg02.jpg");
+    //background-color: grayscale($color: #000000);
+    background-position: 30% 45%;
+    background-size: cover;
+
+    hr {
+        border-color: #ffffff;
+    }
+
+    .card {
+        border-color: #ffffff;
+    }
+
+    table {
+        //background-color: #ffffff;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.7) !important;
+    }
+}
+
+.bgLight {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    //color: white;
+    background-image: url("https://warehousemapp.s3.amazonaws.com/69.jpg");
+    //background-color: grayscale($color: #ffffff);
+    background-position: 30% 45%;
+    background-size: cover;
+
+}
+
+
+button {
+    margin: 1px;
+}
+
+
+.bgRegister {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-image: url("https://warehousemapp.s3.amazonaws.com/ferramentas07.jpg");
+    background-color: #000000;
+    background-position: 30% 45%;
+    background-size: cover;
+
+}
+
+.bgLogin {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-image: url("https://warehousemapp.s3.amazonaws.com/ferramentas08.jpg");
+    background-color: #000000;
+    background-position: 30% 45%;
+    background-size: cover;
+
+}
+
+.bgLoginIndex {
+    display: table;
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    background-image: url("https://warehousemapp.s3.amazonaws.com/ferramentas01.jpg");
+    background-color: #000000;
+    background-position: 30% 45%;
+    background-size: cover;
+
+}
+
+
+
+.cardLogin {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+    color: white;
+}
+
+.elemento {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+@keyframes go-back {
+    0% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+img {
+    animation: go-back 1s;
+}
+
+.grafLeft {
+    animation: go-back 1s;
+}
+
+
+
+@keyframes go {
+    0% {
+        transform: translateX(-100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+#welcome {
+    animation: go 2s;
+}
+
+.grafRight {
+    
+    animation: go 1s;
+    //border-radius: 0.5rem;
+    
+}
+
+//OCULTAR MOSTRAR COLUNAS TABLE
+.tb01,.tb02,.tb03,.tb07,.tb09,.tb10,.tb11,.tb12,.tb13,.tb14,
+.tb15,.tb16,.tb17,.tb20,.tb21,.tb23,.tb24,.tb25,.tb26,.tb27,
+.tb28,.tb29,.tb30,.tb31,.tb32,.tb33,.tb34,.tb36,.tb37,
+.tb38,.tb39,.tb40,.tb41,.tb42,.tb43,.tb44,.tb45
+{
+    display: none;
+}
+
+//OCULTAR MOSTRAR DETALHES LIST
+.li01,/*.li02,.li03,*/.li07,.li09,.li10,.li11,.li12,.li13,.li14,
+.li15,.li16,.li17,.li20,.li21,.li23,.li24,.li25,.li26,.li27,
+.li28,.li29,.li30,.li31,.li32,.li33,.li34,.li36,.li37,.li38,
+.li39,.li40,.li41,.li42,.li43,.li44,.li45
+{
+    display: none;
+}
+
+#hiddenDiv{
+    display:none;
+}
+
+#menuPlanning{
+    display:none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#menuSite{
+    display:none;
+    background-color: #0075be ;
+    border-radius: 0px;
+}
+
+#menuSearch{
+    display:none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#menuWarehouse{
+    display:none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#menuSiteWarehouse{
+    display:none;
+    background-color: #0075be ;
+    border-radius: 0px;
+}
+
+#menuSiteDashboard{
+    display:none;
+    background-color: #0075be ;
+    border-radius: 0px;
+}
+
+#menuSiteRegister{
+    display:none;
+    background-color: #0075be ;
+    border-radius: 0px;
+}
+
+.btn-group-vertical>.btn, 
+.btn-group>.btn {
+    float: unset !important;
+    text-align: center;
+}
+
+.btnGroup {
+  margin: 8px;
+  border-radius: 10px !important;
+}
