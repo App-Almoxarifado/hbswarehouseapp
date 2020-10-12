@@ -3,6 +3,7 @@ require("dotenv").config();
 const compression = require("compression");
 const express = require("express");
 const handlebars = require("express-handlebars");
+const helpers = require('handlebars-helpers')();
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
 const session = require("express-session");
@@ -15,13 +16,9 @@ const cookieParser = require("cookie-parser");
 const path = require("path");
 const app = express();
 
-//MODELS
-//SITES
-require("./models/Client");
-const Client = mongoose.model("customers");
-
 //ROTAS
-
+//INDEX
+const indexRouter = require('./routes/index-route');
 //Grupos
 const groupRoute = require("./routes/group-route");
 //Usuarios
@@ -176,51 +173,8 @@ mongoose
 //public
 app.use(express.static(path.join(__dirname, "public")));
 
-//Carregando arquivo de upload
-/*const storage = multer.diskStorage({
-  destination: function (req, file, cb) {
-    cb(null, "public/uploads/");
-  },
-  filename: function (req, file, cb) {
-    cb(null, file.originalname);
-  },
-});
-const upload = multer({ storage });*/
-
-//Rotas
-app.get("/", async (req, res) => {
-  try {
-    var customers = await Client.find({
-      active: true,
-    })
-      .sort({
-        description: "asc",
-      })
-      .lean();
-    res.render("index", { customers: customers });
-  } catch (err) {
-    req.flash("error_msg", "Ops, Houve um erro interno!");
-    res.redirect("/");
-  }
-});
-
-app.get("/404", (req, res) => {
-  res.send("Erro 404!");
-});
-
-//ROTA DE UPLOAD
-/*app.post("/upload", upload.single("file"), (_req, _res) => {
-    console.log("Upload Realizado Com Sucesso!");
-  });*/
-
-
-app.get("/qrcode", (req, res) => {
-  const url = "https://warehousemapp.herokuapp.com/";
-  const code = qr.image(url, { type: "svg" });
-  res.type("svg");
-  code.pipe(res);
-});
-
+//ROTAS
+app.use('/', indexRouter);
 app.use(require("./routes"));
 app.use("/groups", groupRoute);
 app.use("/usuarios", usuarioRoute);

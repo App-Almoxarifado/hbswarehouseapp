@@ -2,8 +2,9 @@
     <!-- Sidebar  -->
     <nav id="sidebar">
         <div class="sidebar-header">
-
-            <h3>Bootstrap Sidebar</h3>
+        
+            <h3>Welcome, {{user.nome }}</h3>
+         
             <strong>BS</strong>
         </div>
 
@@ -64,5 +65,24 @@
                     Contact
                 </a>
             </li>
+        {{#if user}}
+<li>
+      <a href="/usuarios/logout">
+      <i class="fas fa-times"></i>
+      Sair</a>
+</li>
+      {{else}}
+<li>
+      <a  href="/usuarios/login">
+      <i class="fas fa-sign-in-alt"></i>
+      Login</a>
+
+
+      <a href="/usuarios/registro">
+      <i class="fas fa-user-plus"></i>
+      Registro</a>
+</li>
+      {{/if}}
+
         </ul>
     </nav>

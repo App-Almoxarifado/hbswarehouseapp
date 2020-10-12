@@ -1,5 +1,19 @@
+$theme-colors: ("primary": #0075be,
+);
+$border-radius: 0.3rem !default;
+$border-radius-lg: 0.3rem !default;
+$border-radius-sm: 0.3rem !default;
 
 
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+
+
+//  SIDEBAR
+body {
+    overflow-x: hidden;
+}
 
 $theme-colors: ("primary": #0075be,
 );
@@ -27,14 +41,6 @@ a:focus {
     display: flex;
     align-items: stretch;
 
-}
-
-#tdcontent {
-    height: 100%;
-}
-
-#content {
-    overflow: auto; /* or overflow: hidden; */
 }
 
 #sidebar {
@@ -616,3 +622,4 @@ img {
   margin: 8px;
   border-radius: 10px !important;
 }
+
