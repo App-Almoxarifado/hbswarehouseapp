@@ -2,7 +2,7 @@
 <html lang="pt-br">
 
 <head>
-    <title>Warehousemapp</title>
+    <title>HBS Warehouseapp</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -19,10 +19,8 @@
 </head>
 
 <body>
-
-    {{>_navbar}}
-
-
+{{>_navbar}}
+<div class="container">
             {{#if error}}
             <div class="alert alert-danger">{{error}}</div>
             {{else}}
@@ -30,10 +28,8 @@
             {{>_msg}}
             {{>_sidebar}}
             {{{body}}}
-            
-        </div>
-
-    {{>_footer}}
+</div>            
+{{>_footer}}
 </body>
     <!-- JS JQUERY JS-->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

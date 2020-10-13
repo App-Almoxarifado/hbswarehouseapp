@@ -1,19 +1,4 @@
-$theme-colors: ("primary": #0075be,
-);
-$border-radius: 0.3rem !default;
-$border-radius-lg: 0.3rem !default;
-$border-radius-sm: 0.3rem !default;
 
-
-
-@import "../../node_modules/bootstrap/scss/bootstrap";
-
-
-
-//  SIDEBAR
-body {
-    overflow-x: hidden;
-}
 
 $theme-colors: ("primary": #0075be,
 );
@@ -44,8 +29,8 @@ a:focus {
 }
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+    min-width: 200px;
+    max-width: 200px;
     background: #131313;
     color: #fff;
     transition: all 0.3s;

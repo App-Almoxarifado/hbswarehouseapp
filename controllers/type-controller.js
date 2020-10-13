@@ -18,7 +18,7 @@ exports.getList = async (req, res) => {
       );
     }
     page = Number(page || 1);
-    limit = limit ? Number(limit) : 2;
+    limit = limit ? Number(limit) : 4;
     const quant = await Type.find(
       filtros.length > 0 ? { $or: filtros } : {}
     ).estimatedDocumentCount();
